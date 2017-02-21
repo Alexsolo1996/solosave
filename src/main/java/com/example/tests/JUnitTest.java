@@ -15,14 +15,16 @@ import static org.junit.Assert.fail;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
         TestMethod1.class,
-        TestMethod2.class
+        TestMethod3.class,
+        TestMethod2.class,
+        TestMethod4.class
 })
 
 public class JUnitTest {
 
-    public static WebDriver driver;
-    public static String baseUrl;
-    public static StringBuffer verificationErrors = new StringBuffer();
+    static WebDriver driver;
+    static String baseUrl;
+    private static StringBuffer verificationErrors = new StringBuffer();
     static final Logger userLogger = LogManager.getLogger(Logger.class.getName());
 
  @BeforeClass  public static void setUp() throws Exception {
