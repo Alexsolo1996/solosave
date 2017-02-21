@@ -16,8 +16,7 @@ import static org.junit.Assert.fail;
 @Suite.SuiteClasses({
         TestMethod1.class,
         TestMethod3.class,
-        TestMethod2.class,
-        TestMethod4.class
+        TestMethod2.class
 })
 
 public class JUnitTest {
